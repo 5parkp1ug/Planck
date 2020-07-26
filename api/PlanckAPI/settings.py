@@ -64,6 +64,7 @@ INSTALLED_APPS = [
 
     # Projects Apps
     'accounts',
+    'shortener',
 ]
 
 SITE_ID = 1
