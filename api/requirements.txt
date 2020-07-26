@@ -1,0 +1,13 @@
+dj-database-url==0.5.0
+Django==2.2.14
+django-allauth==0.42.0
+django-debug-toolbar==2.2
+django-timezone-field==4.0
+django-rest-auth==0.9.5
+djangorestframework==3.9.4
+GDAL==2.4.4
+Pillow==6.2.2
+python-decouple==3.3
+psycopg2==2.8.5
+requests==2.24.0
+user-agents==2.1

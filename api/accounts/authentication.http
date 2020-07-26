@@ -1,0 +1,15 @@
+### Get user info
+GET {{host}}/user/
+Accept: application/json
+Authorization: Token {{abhi}}
+
+### Login User
+POST {{host}}/login/
+Content-Type: application/json
+
+{
+  "username": "abhi",
+  "password": "root@toor"
+}
+
+###

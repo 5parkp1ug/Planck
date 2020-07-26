@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  api:
+    image: planckapi:0.1
+    build:
+      context: ./api
+      dockerfile: ../docker/api.dockerfile
+    restart: on-failure
+    volumes:
+    - ./api:/home/user/app/api
+    - ./api/static:/home/user/app/api/static
+    - ./api/media:/home/user/app/api/media
+    ports:
+    - "8000:8000"
+    links:
+      - db
+  db:
+    image: postgis/postgis
+    restart: on-failure
+    volumes:
+      - ./docker/db/:/var/lib/postgresql/data
+    ports:
+    - 5432:5432
+    environment:
+      - POSTGRES_USER=planck
+      - POSTGRES_PASSWORD=planck@123
+      - POSTGRES_DB=planck
