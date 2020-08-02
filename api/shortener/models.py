@@ -6,7 +6,7 @@ from django.utils import timezone
 
 from timezone_field import TimeZoneField
 
-from api.utils.link_code_generator import get_link_code
+from utils.link_code_generator import get_link_code
 
 User = get_user_model()
 
