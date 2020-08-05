@@ -2,7 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; URL={{ link.deep_link }}" />
+    <!--  Essential META Tags -->
+
+    <meta property="og:title" content="{{ link.title }}">
+    <meta property="og:description" content="{{ link.description}}">
+    {% if link.image %}
+        <meta property="og:image" content="{{ link.image.url }}">
+    {% endif %}
+    <meta property="og:url" content="{{request.build_absolute_uri}}">
+    <meta name="twitter:card" content="summary_large_image">
+
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:site_name" content="Planck">
+    <meta name="twitter:image:alt" content="Image">
+
+
+    <!--  Non-Essential, But Required for Analytics -->
+{#    <meta property="fb:app_id" content="your_app_id"/>#}
+{#    <meta name="twitter:site" content="@website-username">#}
+
+    <meta http-equiv="refresh" content="0; URL={{ link.deep_link }}"/>
     <title>Title</title>
 </head>
 <body>
