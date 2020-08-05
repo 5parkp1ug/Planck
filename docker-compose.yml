@@ -1,4 +1,5 @@
 version: '3.8'
+
 services:
   api:
     image: planckapi:0.1
@@ -16,6 +17,7 @@ services:
       - db
     depends_on:
       - worker
+
   db:
     image: postgis/postgis
     restart: on-failure
@@ -27,10 +29,12 @@ services:
       - POSTGRES_USER=planck
       - POSTGRES_PASSWORD=planck@123
       - POSTGRES_DB=planck
+
   redis:
     image: redis:alpine
     ports:
     - 6379:6379
+
   worker:
     build:
       context: ./api
@@ -43,3 +47,19 @@ services:
     depends_on:
       - redis
       - db
+
+  web:
+    build:
+      context: ./web
+      dockerfile: ../docker/web.dockerfile
+    volumes:
+      - ./web/:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+    command: "npm start"
+    depends_on:
+      - api
+    stdin_open: true
