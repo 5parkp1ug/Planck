@@ -8,7 +8,7 @@ django-timezone-field==4.0
 django-rest-auth==0.9.5
 djangorestframework==3.9.4
 GDAL==2.4.4
-Pillow==6.2.2
+Pillow==7.2.0
 python-decouple==3.3
 psycopg2==2.8.5
 redis==3.5.3
