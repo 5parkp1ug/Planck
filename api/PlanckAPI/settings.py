@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'rest_auth.registration',
     'debug_toolbar',
     'timezone_field',
+    'django_celery_results',
 
     # Projects Apps
     'accounts',
@@ -138,7 +139,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -174,3 +175,13 @@ REST_AUTH_SERIALIZERS = {
 }
 OLD_PASSWORD_FIELD_ENABLED = True
 LOGOUT_ON_PASSWORD_CHANGE = True
+
+# CELERY STUFF
+BROKER_URL = 'redis://redis:6379'
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Asia/Kolkata'
+CELERY_ENABLE_UTC = False
+CELERY_RESULT_BACKEND_DB = config('DATABASE_URL')
+CELERY_IMPORTS = ['shortener.tasks', ]

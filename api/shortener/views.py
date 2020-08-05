@@ -12,12 +12,11 @@ class MainRedirectView(APIView):
     """
     def get(self, request, *args, **kwargs):
         keyword = kwargs.get('keyword', None)
-        print(keyword)
         try:
             link = Link.objects.get(keyword=keyword)
         except Link.DoesNotExist:
             return render(request, 'redirect_404.html')
-        print(link.__dict__)
+
         context = {
             'link': link
         }

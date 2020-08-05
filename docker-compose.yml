@@ -14,6 +14,8 @@ services:
     - "8000:8000"
     links:
       - db
+    depends_on:
+      - worker
   db:
     image: postgis/postgis
     restart: on-failure
@@ -25,3 +27,19 @@ services:
       - POSTGRES_USER=planck
       - POSTGRES_PASSWORD=planck@123
       - POSTGRES_DB=planck
+  redis:
+    image: redis:alpine
+    ports:
+    - 6379:6379
+  worker:
+    build:
+      context: ./api
+      dockerfile: ../docker/api.dockerfile
+    command: celery -A PlanckAPI worker -l debug --workdir /home/user/app/api
+    volumes:
+      - ./api:/home/user/app/api
+      - ./api/static:/home/user/app/api/static
+      - ./api/media:/home/user/app/api/media
+    depends_on:
+      - redis
+      - db
