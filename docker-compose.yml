@@ -7,6 +7,7 @@ services:
       context: ./api
       dockerfile: ../docker/api.dockerfile
     restart: on-failure
+    command: "python manage.py runserver 0.0.0.0:8000"
     volumes:
     - ./api:/home/user/app/api
     - ./api/static:/home/user/app/api/static
