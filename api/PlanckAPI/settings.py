@@ -54,11 +54,12 @@ INSTALLED_APPS = [
 
     # 3rd Party Apps
     'rest_framework',
-    'rest_auth',
     'rest_framework.authtoken',
     'allauth',
     'allauth.account',
-    'rest_auth.registration',
+    'allauth.socialaccount',
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
     'debug_toolbar',
     'timezone_field',
     'django_celery_results',
