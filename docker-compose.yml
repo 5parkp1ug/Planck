@@ -14,9 +14,9 @@ services:
     - ./api/media:/home/user/app/api/media
     ports:
     - "8000:8000"
-    links:
-      - db
     depends_on:
+      - db
+      - redis
       - worker
 
   db:
@@ -46,8 +46,8 @@ services:
       - ./api/static:/home/user/app/api/static
       - ./api/media:/home/user/app/api/media
     depends_on:
-      - redis
       - db
+      - redis
 
   web:
     build:
