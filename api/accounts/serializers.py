@@ -1,5 +1,5 @@
 from django.contrib.auth import authenticate, get_user_model
-from rest_auth.models import TokenModel
+from rest_framework.authtoken.models import Token
 from rest_framework import serializers
 from rest_framework.exceptions import ValidationError
 
@@ -16,7 +16,7 @@ class TokenSerializer(serializers.ModelSerializer):
     organization = serializers.CharField(source='user.organization.title', read_only=True)
 
     class Meta:
-        model = TokenModel
+        model = Token
         fields = ('id', 'key', 'first_name', 'last_name', 'organization')
 
 
