@@ -51,7 +51,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "@owczar/dashboard-style--airframe": "^0.1.13",
     "ag-grid-community": "^21.0.1",
     "ag-grid-react": "^21.0.1",
