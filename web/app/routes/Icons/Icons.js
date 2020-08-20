@@ -41,31 +41,31 @@ const Icons = () => (
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-envira" aria-hidden="true"></i> envira</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-fa" aria-hidden="true"></i> fa <span className="text-muted">(alias)</span></div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-first-order" aria-hidden="true"></i> first-order</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-font-awesome" aria-hidden="true"></i> font-awesome</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-gitlab" aria-hidden="true"></i> gitlab</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-glide" aria-hidden="true"></i> glide</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-glide-g" aria-hidden="true"></i> glide-g</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-google-plus" aria-hidden="true"></i> google-plus-circle <span className="text-muted">(alias)</span></div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-google-plus-g" aria-hidden="true"></i> google-plus-official</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-font-awesome" aria-hidden="true"></i> font-awesome</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-gitlab" aria-hidden="true"></i> gitlab</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-glide" aria-hidden="true"></i> glide</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-glide-g" aria-hidden="true"></i> glide-g</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-google-plus" aria-hidden="true"></i> google-plus-circle <span className="text-muted">(alias)</span></div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-google-plus-g" aria-hidden="true"></i> google-plus-official</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-hard-of-hearing" aria-hidden="true"></i> hard-of-hearing <span className="text-muted">(alias)</span></div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-instagram" aria-hidden="true"></i> instagram</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-instagram" aria-hidden="true"></i> instagram</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-low-vision" aria-hidden="true"></i> low-vision</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-pied-piper" aria-hidden="true"></i> pied-piper</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-pied-piper" aria-hidden="true"></i> pied-piper</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-question-circle-o" aria-hidden="true"></i> question-circle-o</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-sign-language" aria-hidden="true"></i> sign-language</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-signing" aria-hidden="true"></i> signing <span className="text-muted">(alias)</span></div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-snapchat" aria-hidden="true"></i> snapchat</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-snapchat-ghost" aria-hidden="true"></i> snapchat-ghost</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-snapchat-square" aria-hidden="true"></i> snapchat-square</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-snapchat" aria-hidden="true"></i> snapchat</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-snapchat-ghost" aria-hidden="true"></i> snapchat-ghost</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-snapchat-square" aria-hidden="true"></i> snapchat-square</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-themeisle" aria-hidden="true"></i> themeisle</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-universal-access" aria-hidden="true"></i> universal-access</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-viadeo" aria-hidden="true"></i> viadeo</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-viadeo-square" aria-hidden="true"></i> viadeo-square</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-volume-control-phone" aria-hidden="true"></i> volume-control-phone</div>
                         <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-wheelchair-alt" aria-hidden="true"></i> wheelchair-alt</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-wpbeginner" aria-hidden="true"></i> wpbeginner</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-wpforms" aria-hidden="true"></i> wpforms</div>
-                        <div className="fa-hover col-md-3 col-sm-4"><i className="fab fa-fw fa-yoast" aria-hidden="true"></i> yoast</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-wpbeginner" aria-hidden="true"></i> wpbeginner</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-wpforms" aria-hidden="true"></i> wpforms</div>
+                        <div className="fa-hover col-md-3 col-sm-4"><i className="fa fa-fw fa-yoast" aria-hidden="true"></i> yoast</div>
                     </Row>
                 </CardBody>
             </Card>
