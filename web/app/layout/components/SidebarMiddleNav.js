@@ -16,30 +16,6 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Stock" to='/dashboards/stock' exact />
             <SidebarMenu.Item title="Reports" to='/dashboards/reports' exact />
         </SidebarMenu.Item>
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-th"></i>}
-            title="Widgets"
-            to='/widgets'
-        />
-        { /* -------- Cards ---------*/ }
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-clone"></i>}
-            title="Cards"
-        >
-            <SidebarMenu.Item title="Cards" to='/cards/cards' exact />
-            <SidebarMenu.Item title="Cards Headers" to='/cards/cardsheaders' exact />
-        </SidebarMenu.Item>
-        { /* -------- Layouts ---------*/ }
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-columns"></i>}
-            title="Layouts"
-        >
-            <SidebarMenu.Item title="Navbar" to='/layouts/navbar' exact />
-            <SidebarMenu.Item title="Sidebar" to='/layouts/sidebar' exact />
-            <SidebarMenu.Item title="Sidebar A" to='/layouts/sidebar-a' exact />
-            <SidebarMenu.Item title="Sidebar With Navbar" to="/layouts/sidebar-with-navbar" exact />
-            <SidebarMenu.Item title="Drag &amp; Drop" to='/layouts/dnd-layout' exact />
-        </SidebarMenu.Item>
         { /* -------- Interface ---------*/ }
         <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-toggle-on"></i>}
@@ -167,26 +143,9 @@ export const SidebarMiddleNav = () => (
             <SidebarMenu.Item title="Timeline" to="/pages/timeline" />
         </SidebarMenu.Item>
         <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-star-o"></i>}
-            title="Icons"
-            to='/icons'
-        />
-        <SidebarMenu.Item
             icon={<i className="fa fa-fw fa-bookmark-o"></i>}
             title="Docs"
             href='https://webkom.gitbook.io/spin/v/airframe/airframe-react/documentation-react'
         />
-        { /* -------- Versions ---------*/ }
-        <SidebarMenu.Item
-            icon={<i className="fa fa-fw fa-folder-open-o"></i>}
-            title="Versions"
-        >
-            <SidebarMenu.Item title="NextJS (React)" href='http://airframe.nextjs.webkom.co/' />
-            <SidebarMenu.Item title="React" href='http://dashboards.webkom.co/react/airframe' />
-            <SidebarMenu.Item title="jQuery" to="http://dashboards.webkom.co/jquery/airframe/" />
-            <SidebarMenu.Item title="Vue" to="http://dashboards.webkom.co/vue/airframe" />
-            <SidebarMenu.Item title="Angular" to="http://dashboards.webkom.co/angular/airframe" />
-            <SidebarMenu.Item title=".NET MVC" to="http://dashboards.webkom.co/net-mvc/airframe" />
-        </SidebarMenu.Item>
     </SidebarMenu >
 );

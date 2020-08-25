@@ -124,19 +124,6 @@ export const RoutedContent = () => {
             <Route path="/dashboards/stock" exact component={Stock} />
             <Route path="/dashboards/reports" exact component={Reports} />
 
-            <Route path='/widgets' exact component={Widgets} />
-            
-            { /*    Cards Routes     */ }
-            <Route path='/cards/cards' exact component={Cards} />
-            <Route path='/cards/cardsheaders' exact component={CardsHeaders} />
-            
-            { /*    Layouts     */ }
-            <Route path='/layouts/navbar' component={NavbarOnly} />
-            <Route path='/layouts/sidebar' component={SidebarDefault} />
-            <Route path='/layouts/sidebar-a' component={SidebarA} />
-            <Route path="/layouts/sidebar-with-navbar" component={SidebarWithNavbar} />
-            <Route path='/layouts/dnd-layout' component={DragAndDropLayout} />
-
             { /*    Interface Routes   */ }
             <Route component={ Accordions } path="/interface/accordions" />
             <Route component={ Alerts } path="/interface/alerts" />
@@ -219,7 +206,6 @@ export const RoutedContent = () => {
             <Route component={ Success } path="/pages/success" />
             <Route component={ Timeline } path="/pages/timeline" />
 
-            <Route path='/icons' exact component={Icons} />
 
             { /*    404    */ }
             <Redirect to="/pages/error-404" />

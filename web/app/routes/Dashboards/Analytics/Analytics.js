@@ -225,8 +225,9 @@ export class Analytics extends React.Component {
                                     <MetricVsTarget 
                                         title="Users"
                                         value="168,793"
+                                        progressbarValue="67"
                                         progressbarColor="danger"
-                                        targetValue="169,001"
+                                        targetValue="5,169,001"
                                     />
                                 </CardBody>
                                 <CardFooter>
