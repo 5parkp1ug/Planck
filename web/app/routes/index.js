@@ -12,17 +12,6 @@ import SidebarWithNavbar from './Layouts/SidebarWithNavbar';
 
 import ReCharts from './Graphs/ReCharts';
 
-import Forms from './Forms/Forms';
-import FormsLayouts from './Forms/FormsLayouts';
-import InputGroups from './Forms/InputGroups';
-import Wizard from './Forms/Wizard';
-import TextMask from './Forms/TextMask';
-import Typeahead from './Forms/Typeahead';
-import Toggles from './Forms/Toggles';
-import Editor from './Forms/Editor';
-import DatePicker from './Forms/DatePicker';
-import Dropzone from './Forms/Dropzone';
-import Sliders from './Forms/Sliders';
 
 import Tables from './Tables/Tables';
 import ExtendedTable from './Tables/ExtendedTable';
