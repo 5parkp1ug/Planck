@@ -66,13 +66,13 @@ export const RoutedContent = () => {
 
             { /*    Pages Routes    */ }
             {/*<Route component={ ComingSoon } path="/pages/coming-soon" />*/}
-            <Route component={ Confirmation } path="/pages/confirmation" />
-            <Route component={ Danger } path="/pages/danger" />
+            {/*<Route component={ Confirmation } path="/pages/confirmation" />*/}
+            {/*<Route component={ Danger } path="/pages/danger" />*/}
             <Route component={ ForgotPassword } path="/pages/forgot-password" />
-            <Route component={ LockScreen } path="/pages/lock-screen" />
+            {/*<Route component={ LockScreen } path="/pages/lock-screen" />*/}
             <Route component={ Login } path="/pages/login" />
             <Route component={ Register } path="/pages/register" />
-            <Route component={ Success } path="/pages/success" />
+            {/*<Route component={ Success } path="/pages/success" />*/}
 
             {/* Link Routes */}
             <Route component={ Links } path="/links/" />
