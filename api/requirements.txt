@@ -4,7 +4,7 @@ dj-rest-auth==1.1.1
 Django==2.2.14
 django-allauth==0.42.0
 django-celery-results==1.2.1
-django-debug-toolbar==2.2
+django-debug-toolbar==2.2.1
 django-timezone-field==4.0
 djangorestframework==3.9.4
 GDAL==2.4.4
