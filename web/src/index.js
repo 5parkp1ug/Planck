@@ -1,17 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-
-import "@fortawesome/fontawesome-free/css/all.min.css";
-
-import Dashboard from "views/Dashboard.js";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import App from './app/App';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/dashboard" component={Dashboard} />
-      <Redirect from="/" to="/dashboard" />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+  <BrowserRouter basename="/">
+    <App />
+  </BrowserRouter>
+, document.getElementById('root'));
+
+serviceWorker.unregister();
