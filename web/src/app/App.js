@@ -40,7 +40,7 @@ class App extends Component {
   onRouteChanged() {
     console.log("ROUTE CHANGED");
     window.scrollTo(0, 0);
-    const fullPageLayoutRoutes = ['/login', '/register'];
+    const fullPageLayoutRoutes = ['/login', '/register', '/login/', '/register/'];
     for ( let i = 0; i < fullPageLayoutRoutes.length; i++ ) {
       if (this.props.location.pathname === fullPageLayoutRoutes[i]) {
         this.setState({

@@ -30,7 +30,8 @@ DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    '0.0.0.0'
+    '0.0.0.0',
+    'localhost'
 ]
 INTERNAL_IPS = [
     '127.0.0.1',

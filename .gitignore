@@ -2,6 +2,7 @@
 /docker/db
 # IDE
 .idea
+.vscode
 
 # React
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
